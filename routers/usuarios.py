@@ -58,7 +58,7 @@ def edad_minima (cls, v: int) -> int:
 
 
 
-@router.get("/{usuario_id}", Body)
+@router.get("/{usuario_id}")
 def obtener_ususario(
     usuario_id: Annotated[int, Path(gt= 0, description="ID del usuario(mayor a 0)")],
     estado: Annotated[str, Query(min_length=3, max_length=10)] = "general"):

@@ -5,7 +5,7 @@ from dependencies import verify_api_token
 import re
 
 
-router= AOIRouter (prefix="/productos", tags=["Productos"]) # type: ignore
+router= APIRouter (prefix="/productos", tags=["Productos"]) # type: ignore
 
 
 db_productos: list[dict] = []
